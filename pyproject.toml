@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws-genai-architecture-viz"
+dynamic = ["version"]
+description = "Interactive visualization of AWS GenAI LLM training architecture"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+keywords = ["aws", "genai", "llm", "visualization", "architecture", "machine-learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/aws-genai-architecture-viz"
+Documentation = "https://aws-genai-architecture-viz.readthedocs.io/"
+Repository = "https://github.com/yourusername/aws-genai-architecture-viz.git"
+"Bug Tracker" = "https://github.com/yourusername/aws-genai-architecture-viz/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.8",
+    "mypy>=0.812",
+]
+
+[project.scripts]
+aws-genai-viz = "aws_genai_architecture.cli:main"
+
+[tool.setuptools_scm]
+write_to = "aws_genai_architecture/_version.py"

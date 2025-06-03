@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include pyproject.toml
+recursive-include aws_genai_architecture/static *
+recursive-include aws_genai_architecture/templates *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
