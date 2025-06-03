@@ -9,6 +9,7 @@ setup(
     author="Your Name",
     author_email="your.email@example.com",
     description="Interactive visualization of AWS GenAI LLM training architecture with detailed communication monitoring",
+    license="MIT",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/aws-genai-architecture-viz",
